@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">OtbtApplication</string>
+    <string name="todo">TODO</string>
+    <string name="where_are_you_visiting">Where are you visiting?</string>
 </resources>
