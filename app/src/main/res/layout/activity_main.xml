@@ -7,34 +7,46 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:id="@+id/main_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray">
 
         <ImageView
             android:id="@+id/company_logo"
             android:layout_width="wrap_content"
             android:layout_height="80dp"
+            android:background="@android:color/background_light"
+            android:contentDescription="@string/todo"
             android:padding="5dp"
-            app:srcCompat="@drawable/otbt_logo2"
-            android:contentDescription="@string/todo" />
+            app:srcCompat="@drawable/otbt_logo2" />
 
-        <android.support.constraint.ConstraintLayout
-            android:id="@+id/search_section"
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="10dp"
             android:layout_marginTop="80dp"
-            android:layout_marginRight="10dp">
+            android:layout_marginBottom="420dp"
+            android:background="@android:color/background_light">
 
             <EditText
-                android:id="@+id/search_box"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/search_field"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:background="@drawable/search_layout"
                 android:ems="10"
+                android:importantForAutofill="no"
                 android:inputType="textPersonName"
-                android:text="@string/where_are_you_visiting"
-                android:autofillHints="" />
-        </android.support.constraint.ConstraintLayout>
+                android:padding="5dp"
+                android:text="@string/whereareyouvisiting"
+                android:textColor="#999999"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="0dp"
+                tools:targetApi="o" />
+
+        </RelativeLayout>
     </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
