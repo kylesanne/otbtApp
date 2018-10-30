@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         mImageUrls.add("https://i.imgur.com/Gn0Zydn.jpg");
         mNames.add("Example");
-        
+
         initRecyclerView();
     }
 
