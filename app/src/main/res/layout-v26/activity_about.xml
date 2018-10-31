@@ -4,6 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_login">
+    tools:context=".About">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="178dp"
+        android:layout_height="61dp"
+        android:text="This is the About page"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="162dp" />
 </android.support.constraint.ConstraintLayout>
