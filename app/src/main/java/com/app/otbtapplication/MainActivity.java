@@ -8,14 +8,22 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "MainActivity";
+
+
+
 
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
@@ -27,6 +35,25 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         getImages();
+
+        ImageButton searchButton = findViewById(R.id.search_button);
+        ImageButton menuButton = findViewById(R.id.menu_button);
+        ImageView homeButton = findViewById(R.id.company_logo);
+        Button button = findViewById(R.id.button2);
+
+        searchButton.setOnClickListener(this);
+        homeButton.setOnClickListener(this);
+        homeButton.setOnClickListener(this);
+        button.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.button2:
+                Toast.makeText(this, "menu button clicked", Toast.LENGTH_SHORT).show();
+                break;
+        }
     }
 
     private void getImages(){
@@ -99,4 +126,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return false;
     }
+
+
 }
