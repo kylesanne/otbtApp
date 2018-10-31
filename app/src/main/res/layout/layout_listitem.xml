@@ -38,7 +38,7 @@
                 android:autoSizeMinTextSize="8sp"
                 android:autoSizeTextType="uniform"
                 android:gravity="center"
-                android:text="Canada"
+                android:text="CANADA"
                 android:textColor="#FFFFFF"
                 android:textSize="20sp" />
 
