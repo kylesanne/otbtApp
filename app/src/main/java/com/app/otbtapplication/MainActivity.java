@@ -29,6 +29,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ArrayList<String> mNames = new ArrayList<>();
     private ArrayList<String> mImageUrls = new ArrayList<>();
 
+    private ArrayList<String> mNames2 = new ArrayList<>();
+    private ArrayList<String> mImageUrls2 = new ArrayList<>();
+    private ArrayList<String> mPrices = new ArrayList<>();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -81,6 +85,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mNames.add("Experiences");
 
         initRecyclerView();
+
+
+        mImageUrls2.add("https://i.imgur.com/nCpZf5t.png");
+        mNames2.add("The Ark @ Tui Ridge");
+        mPrices.add("$99 per night");
+
+        mImageUrls2.add("https://i.imgur.com/0LFntCv.png");
+        mNames2.add("Old Coach Oasis");
+        mPrices.add("$240 per night (up to 2 guests)");
+
+        mImageUrls2.add("https://i.imgur.com/4lAkhsM.png");
+        mNames2.add("Tui Treehouse - ★★★★");
+        mPrices.add("$120 per night (up to 2 guests)");
+
+        mImageUrls2.add("https://i.imgur.com/N8Zs4I5.png");
+        mNames2.add("Welcome Rock");
+        mPrices.add("$150 per night (up to 2 guests)");
+
+        initRecyclerView2();
     }
 
     private void initRecyclerView(){
@@ -89,6 +112,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         recyclerView.setLayoutManager(layoutManager);
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(mNames, mImageUrls, this);
         recyclerView.setAdapter(adapter);
+    }
+
+    private void initRecyclerView2() {
+        LinearLayoutManager layoutManager2 = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        RecyclerView recyclerView2 = findViewById(R.id.recyclerView2);
+        recyclerView2.setLayoutManager(layoutManager2);
+        RecyclerViewAdapter2 adapter2 = new RecyclerViewAdapter2(mNames2, mPrices, mImageUrls2, this);
+        recyclerView2.setAdapter(adapter2);
     }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

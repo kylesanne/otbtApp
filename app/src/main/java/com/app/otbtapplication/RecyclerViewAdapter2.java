@@ -1,39 +1,36 @@
 package com.app.otbtapplication;
 
 import android.content.Context;
-import android.content.Intent;
-import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import com.bumptech.glide.Glide;
-import org.w3c.dom.Text;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import de.hdodenhof.circleimageview.CircleImageView;
 
-public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>{
+import com.bumptech.glide.Glide;
+
+import java.util.ArrayList;
+
+public class RecyclerViewAdapter2 extends RecyclerView.Adapter<RecyclerViewAdapter2.ViewHolder>{
 
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
+    private ArrayList<String> mPrices = new ArrayList<>();
     private ArrayList<String> mImageUrls = new ArrayList<>();
     private Context mContext;
 
-    public RecyclerViewAdapter(ArrayList<String> names, ArrayList<String> imageUrls, Context context) {
+    public RecyclerViewAdapter2(ArrayList<String> names, ArrayList<String> prices, ArrayList<String> imageUrls, Context context) {
         this.mNames = names;
+        this.mPrices = prices;
         this.mImageUrls = imageUrls;
         this.mContext = context;
     }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_listitem, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_listitem2, parent, false);
         return new ViewHolder(view);
     }
 
@@ -44,7 +41,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
                 .load(mImageUrls.get(position))
                 .into(holder.image);
 
+        holder.price.setText(mPrices.get(position));
         holder.name.setText(mNames.get(position));
+
 
         holder.image.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,11 +61,14 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public class ViewHolder extends RecyclerView.ViewHolder{
         ImageView image;
         TextView name;
+        TextView price;
 
         public ViewHolder(View itemView) {
             super(itemView);
             image = itemView.findViewById(R.id.image_view);
             name = itemView.findViewById(R.id.name);
+            price = itemView.findViewById(R.id.price);
+
         }
     }
 }
