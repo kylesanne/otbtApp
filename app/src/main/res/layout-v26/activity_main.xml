@@ -89,7 +89,7 @@
 
             <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="1000dp">
+                android:layout_height="1500dp">
 
                 <TextView
                     android:id="@+id/tryTheseText"
@@ -110,9 +110,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="0dp"
                     android:layout_marginTop="49dp"
-                    android:orientation="horizontal">
-
-                </android.support.v7.widget.RecyclerView>
+                    android:orientation="horizontal" />
 
                 <Button
                     android:id="@+id/button2"
@@ -139,18 +137,64 @@
 
                 <ImageView
                     android:id="@+id/advertisementView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="200dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    app:srcCompat="@drawable/gearhire" />
+
+                <TextView
+                    android:id="@+id/advertisement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="410dp"
+                    android:autoSizeMaxTextSize="28sp"
+                    android:autoSizeMinTextSize="8sp"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center"
+                    android:text="Equipment Hire"
+                    android:textColor="#FFFFFF"
+                    android:textSize="28sp" />
+
+                <TextView
+                    android:id="@+id/popularNearbyText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="500dp"
+                    android:text="Featured Near You"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/interestingReadText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="800dp"
+                    android:text="An Interesting Read"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="0dp"
-                    android:layout_marginTop="250dp"
-                    android:orientation="horizontal">
-
-                </ImageView>
-
+                    android:layout_marginTop="820dp"
+                    android:orientation="horizontal" />
 
             </RelativeLayout>
+
         </ScrollView>
 
     </RelativeLayout>

@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         mImageUrls.add("https://i.imgur.com/Wsaml3C.png");
         mNames.add("Quirky");
 
-        mImageUrls.add("https://i.imgur.com/nv7ljPv.png");
+        mImageUrls.add("https://i.imgur.com/3u2NFXg.png");
         mNames.add("Farmstay");
 
         mImageUrls.add("https://i.imgur.com/U2Eo0Eg.png");
