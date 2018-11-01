@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">OtbtApplication</string>
+    <string name="app_name">OTBT</string>
     <string name="todo">TODO</string>
     <string name="textview">TextView</string>
     <string name="whereareyouvisiting">Where are you visiting?</string>
