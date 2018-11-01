@@ -51,14 +51,14 @@
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="0dp"
                 android:layout_marginEnd="59dp"
+                android:autoText="false"
                 android:background="@drawable/search_layout"
                 android:ems="10"
+                android:hint="@string/whereareyouvisiting"
                 android:importantForAutofill="no"
-                android:inputType="textEmailAddress"
                 android:paddingLeft="15dp"
                 android:paddingTop="5dp"
                 android:paddingBottom="5dp"
-                android:hint="@string/whereareyouvisiting"
                 android:textColorHint="#999999"
                 android:textColorLink="@android:color/darker_gray"
                 android:textSize="16sp"
@@ -92,12 +92,12 @@
                 android:layout_height="1000dp">
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/tryTheseText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
-                    android:layout_marginTop="20dp"
-                    android:text="Try these"
+                    android:layout_marginTop="13dp"
+                    android:text="Try These"
                     android:textColor="@android:color/black"
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -109,22 +109,46 @@
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_marginStart="0dp"
-                    android:layout_marginTop="55dp"
+                    android:layout_marginTop="49dp"
                     android:orientation="horizontal">
 
                 </android.support.v7.widget.RecyclerView>
 
                 <Button
                     android:id="@+id/button2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="50dp"
+                    android:layout_height="33dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginStart="164dp"
-                    android:layout_marginLeft="164dp"
-                    android:layout_marginTop="344dp"
+                    android:layout_marginStart="311dp"
+                    android:layout_marginLeft="311dp"
+                    android:layout_marginTop="9dp"
                     android:text="Button" />
+
+                <TextView
+                    android:id="@+id/needGearText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="235dp"
+                    android:text="Need Gear?"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/advertisementView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="250dp"
+                    android:orientation="horizontal">
+
+                </ImageView>
+
 
             </RelativeLayout>
         </ScrollView>

@@ -59,23 +59,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private void getImages(){
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
 
-        mImageUrls.add("https://i.imgur.com/bx9MyZr.jpg");
-        mNames.add("Glamping");
-
-        mImageUrls.add("https://i.imgur.com/uADPfu5.jpg");
-        mNames.add("Experiences");
-
-        mImageUrls.add("https://i.imgur.com/Gn0Zydn.jpg");
+        mImageUrls.add("https://i.imgur.com/2rH7tVg.png");
         mNames.add("Camping");
 
-        mImageUrls.add("https://i.imgur.com/Gn0Zydn.jpg");
-        mNames.add("Example");
+        mImageUrls.add("https://i.imgur.com/xyTkSXd.png");
+        mNames.add("Cabins");
 
-        mImageUrls.add("https://i.imgur.com/Gn0Zydn.jpg");
-        mNames.add("Example");
+        mImageUrls.add("https://i.imgur.com/YkhKcq1.png");
+        mNames.add("Glamping");
 
-        mImageUrls.add("https://i.imgur.com/Gn0Zydn.jpg");
-        mNames.add("Example");
+        mImageUrls.add("https://i.imgur.com/O2JAM1m.png");
+        mNames.add("Cottages");
+
+        mImageUrls.add("https://i.imgur.com/Wsaml3C.png");
+        mNames.add("Quirky");
+
+        mImageUrls.add("https://i.imgur.com/nv7ljPv.png");
+        mNames.add("Farmstay");
+
+        mImageUrls.add("https://i.imgur.com/U2Eo0Eg.png");
+        mNames.add("Experiences");
 
         initRecyclerView();
     }
