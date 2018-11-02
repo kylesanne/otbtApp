@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
-
+    tools:context=".Signup">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,49 +13,55 @@
         tools:layout_editor_absoluteY="0dp">
 
         <Button
-            android:id="@+id/button_login"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="197dp"
-            android:text="Login"
-            tools:layout_editor_absoluteX="137dp"
-            tools:layout_editor_absoluteY="314dp" />
-
-        <Button
             android:id="@+id/button_signup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="138dp"
-            android:layout_marginLeft="138dp"
-            android:layout_marginBottom="107dp"
+            android:layout_marginStart="137dp"
+            android:layout_marginLeft="137dp"
+            android:layout_marginBottom="94dp"
             android:text="Sign-up"
             tools:layout_editor_absoluteX="137dp"
             tools:layout_editor_absoluteY="314dp" />
 
         <EditText
-            android:id="@id/editText_user"
+            android:id="@id/editText_name"
             android:layout_width="250dp"
             android:layout_height="50dp"
+            android:layout_alignStart="@+id/editText_email"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="2dp"
+            android:layout_marginBottom="407dp"
+            android:hint="Name"
+            android:inputType="text"
+            tools:layout_editor_absoluteX="67dp"
+            tools:layout_editor_absoluteY="218dp" />
+
+        <EditText
+            android:id="@id/editText_email"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
             android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="158dp"
-            android:hint="Username"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="252dp"
+            android:hint="Email Address"
             android:inputType="text"
             tools:layout_editor_absoluteX="67dp"
             tools:layout_editor_absoluteY="123dp" />
 
         <EditText
-            android:id="@id/editText_password"
+            android:id="@id/editText_pass"
             android:layout_width="250dp"
             android:layout_height="50dp"
+            android:layout_alignStart="@+id/editText_email"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="299dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="209dp"
             android:hint="Password"
             android:inputType="text"
             tools:layout_editor_absoluteX="67dp"
@@ -71,8 +76,8 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="112dp"
             android:layout_marginLeft="112dp"
-            android:layout_marginTop="79dp"
-            android:text="Login"
+            android:layout_marginTop="33dp"
+            android:text="Sign-up"
             android:textAllCaps="true"
             android:textSize="24sp" />
 

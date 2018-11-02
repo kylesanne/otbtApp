@@ -17,6 +17,7 @@ public class Login extends AppCompatActivity {
     private  EditText password;
     private  TextView attempt;
     private  Button login_button;
+    private Button signup_button;
     int attempt_counter = 5;
 
     @Override
@@ -24,6 +25,7 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         LoginButton();
+        SignupButton();
     }
 
     public void LoginButton() {
@@ -47,6 +49,20 @@ public class Login extends AppCompatActivity {
                             Toast.makeText(Login.this, "Username and password is NOT correct",
                                     Toast.LENGTH_SHORT).show();
                         }
+                    }
+                }
+        );
+    }
+
+    public void SignupButton() {
+        signup_button = (Button) findViewById(R.id.button_signup);
+
+        signup_button.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent(Login.this, Signup.class);
+                        startActivity(intent);
                     }
                 }
         );

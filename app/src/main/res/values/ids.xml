@@ -2,4 +2,7 @@
 <resources>
     <item name="editText_password" type="id" />
     <item name="editText_user" type="id" />
+    <item name="editText_email" type="id" />
+    <item name="editText_name" type="id" />
+    <item name="editText_pass" type="id" />
 </resources>
