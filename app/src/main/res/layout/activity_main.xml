@@ -121,6 +121,7 @@
                     android:layout_marginStart="311dp"
                     android:layout_marginLeft="311dp"
                     android:layout_marginTop="9dp"
+                    android:onClick="onClick"
                     android:text="Button" />
 
                 <RelativeLayout
