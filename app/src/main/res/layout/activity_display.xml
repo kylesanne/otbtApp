@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Camping">
+    tools:context=".Display">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -90,7 +90,7 @@
         </ScrollView>
 
         <ImageView
-            android:id="@+id/imageView_campingOne"
+            android:id="@+id/imageView_waikatoOne"
             android:layout_width="match_parent"
             android:layout_height="160dp"
             android:layout_alignParentStart="true"
@@ -98,14 +98,15 @@
             android:layout_alignParentTop="true"
             android:layout_marginStart="0dp"
             android:layout_marginLeft="0dp"
-            android:layout_marginTop="167dp"
+            android:layout_marginTop="170dp"
             android:adjustViewBounds="true"
             android:clickable="true"
-            android:onClick="camping_one"
-            app:srcCompat="@drawable/karetu" />
+            android:onClick="waikato_one"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/cabinn" />
 
         <ImageView
-            android:id="@+id/imageView_campingThree"
+            android:id="@+id/imageView_waikatoThree"
             android:layout_width="wrap_content"
             android:layout_height="160dp"
             android:layout_alignParentStart="true"
@@ -116,23 +117,25 @@
             android:layout_marginBottom="21dp"
             android:adjustViewBounds="true"
             android:clickable="true"
-            android:onClick="camping_three"
-            app:srcCompat="@drawable/grassmere" />
+            android:cropToPadding="false"
+            android:onClick="waikato_three"
+            app:srcCompat="@drawable/carmm" />
 
         <ImageView
-            android:id="@+id/imageView_campingTwo"
+            android:id="@+id/imageView_waikatoTwo"
             android:layout_width="wrap_content"
             android:layout_height="160dp"
-            android:layout_above="@+id/imageView_campingThree"
+            android:layout_above="@+id/imageView_waikatoThree"
             android:layout_alignParentStart="true"
             android:layout_alignParentLeft="true"
             android:layout_marginStart="0dp"
             android:layout_marginLeft="0dp"
-            android:layout_marginBottom="-8dp"
+            android:layout_marginBottom="1dp"
             android:adjustViewBounds="true"
             android:clickable="true"
-            android:onClick="camping_two"
-            app:srcCompat="@drawable/pukeko" />
+            android:onClick="waikato_two"
+            android:scaleType="centerInside"
+            app:srcCompat="@drawable/orchh" />
 
         <TextView
             android:id="@+id/textView8"
@@ -144,9 +147,8 @@
             android:layout_marginStart="2dp"
             android:layout_marginLeft="2dp"
             android:layout_marginTop="121dp"
-            android:text='Search results for "Camping"'
+            android:text='Search results for "Waikato"'
             android:textSize="24sp"
             android:textStyle="italic" />
     </RelativeLayout>
-
 </android.support.constraint.ConstraintLayout>
