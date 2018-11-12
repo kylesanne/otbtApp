@@ -22,6 +22,7 @@ public class BookActivity extends AppCompatActivity implements OnItemSelectedLis
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_book);
 
         spinnerAccommodation = (Spinner) findViewById(R.id.AccommodationSpinner);
