@@ -39,16 +39,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         getImages();
 
-        ImageButton searchButton = findViewById(R.id.search_button);
-        ImageButton menuButton = findViewById(R.id.menu_button);
-        ImageView homeButton = findViewById(R.id.company_logo);
-        Button button = findViewById(R.id.button2);
-
-        searchButton.setOnClickListener(this);
-        homeButton.setOnClickListener(this);
-        homeButton.setOnClickListener(this);
-        button.setOnClickListener(this);
-
         button2 = (Button) findViewById(R.id.button2);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -134,6 +124,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         RecyclerViewAdapter2 adapter2 = new RecyclerViewAdapter2(mNames2, mPrices, mImageUrls2, this);
         recyclerView2.setAdapter(adapter2);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
