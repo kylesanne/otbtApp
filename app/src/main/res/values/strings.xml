@@ -13,4 +13,12 @@
     <string name="screen_page_text">Welcome  to the second page</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="button_signup_text">Sign-up</string>
+
+    <string-array name="spinner_options">
+        <item name ="spectacular">spectacular</item>
+        <item name ="super_good">super good</item>
+        <item name ="really_good">really good</item>
+        <item name ="good">good</item>
+        <item name ="bad">bad</item>
+    </string-array>
 </resources>
