@@ -22,8 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final String TAG = "MainActivity";
 
-
-
+    private Button button2;
 
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
@@ -49,6 +48,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         homeButton.setOnClickListener(this);
         homeButton.setOnClickListener(this);
         button.setOnClickListener(this);
+
+        button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OpenActivityBook();
+            }
+        });
+
+    }
+
+    public void OpenActivityBook() {
+        Intent intent = new Intent(this, BookActivity.class);
+        startActivity(intent);
     }
 
     @Override
