@@ -3,10 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="demo.com.example.william.actionbarsettings.MainActivity">
 
+
     <item android:id="@+id/search_button"
-        android:title="search"
+        android:focusable="false"
+        android:iconifiedByDefault="false"
+        app:iconifiedByDefault="false"
+        android:title="@string/search_hint"
+        android:hint="@string/search_hint"
         android:icon="@android:drawable/ic_menu_search"
-        app:actionViewClass="android.widget.SearchView"
+        app:actionViewClass="android.support.v7.widget.SearchView"
         android:layout_alignParentLeft="true"
         app:showAsAction="always"/>
 
