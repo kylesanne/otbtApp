@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private static final String TAG = "MainActivity";
 
+    private Button button2;
 
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
@@ -38,15 +39,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         getImages();
 
-        ImageButton searchButton = findViewById(R.id.search_button);
-        ImageButton menuButton = findViewById(R.id.menu_button);
-        ImageView homeButton = findViewById(R.id.company_logo);
-        Button button = findViewById(R.id.button2);
+        button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                OpenActivityBook();
+            }
+        });
 
-        searchButton.setOnClickListener(this);
-        homeButton.setOnClickListener(this);
-        homeButton.setOnClickListener(this);
-        button.setOnClickListener(this);
+    }
+
+    public void OpenActivityBook() {
+        Intent intent = new Intent(this, BookActivity.class);
+        startActivity(intent);
     }
 
     @Override
@@ -119,6 +124,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         RecyclerViewAdapter2 adapter2 = new RecyclerViewAdapter2(mNames2, mPrices, mImageUrls2, this);
         recyclerView2.setAdapter(adapter2);
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.

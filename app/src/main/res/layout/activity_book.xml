@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".BookActivity">
+
+    <ImageView
+        android:id="@+id/Companylogo"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="@android:color/background_light"
+        android:padding="5dp"
+        app:srcCompat="@drawable/otbt_logo2" />
+
+    <View
+        android:id="@+id/SeperationLine1"
+        android:layout_below="@+id/Companylogo"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <ScrollView
+        android:layout_below="@+id/SeperationLine1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/BookingPageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:text="BOOK NOW"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/NameText"
+                android:layout_below="@+id/BookingPageTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:text="Valley Views"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/LocationText"
+                android:layout_below="@+id/NameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:text="Otiake, Otago"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/RatingText"
+                android:layout_below="@+id/LocationText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:text="★★★★★ 106"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/AccommodationTypeText"
+                android:layout_below="@+id/RatingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:text="Accommodation type"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                 />
+
+            <Spinner
+                android:id="@+id/AccommodationSpinner"
+                android:layout_below="@+id/AccommodationTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_prompt"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+            <TextView
+                android:id="@+id/GuestsNumberText"
+                android:layout_below="@+id/AccommodationSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:text="Number of guests"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                />
+
+            <Spinner
+                android:id="@+id/GuestsSpinner"
+                android:layout_below="@+id/GuestsNumberText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="0dp"
+                android:spinnerMode="dialog"
+                android:prompt="@string/spinner_prompt"
+                style="@style/Base.Widget.AppCompat.Spinner.Underlined"/>
+
+            <TextView
+                android:id="@+id/CheckInText"
+                android:layout_below="@+id/GuestsSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:text="Check-in"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/CheckInDate"
+                android:layout_below="@+id/CheckInText"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:ems="10"
+                android:inputType="date"
+                android:maxLength="10"/>
+
+            <TextView
+                android:id="@+id/CheckOutText"
+                android:layout_below="@+id/GuestsSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="30dp"
+                android:text="Check-out"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/CheckOutDate"
+                android:layout_below="@+id/CheckOutText"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:ems="10"
+                android:inputType="date"
+                android:maxLength="10"/>
+
+            <TextView
+                android:id="@+id/ExperienceTitle"
+                android:layout_below="@+id/CheckOutDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:text="Add an experience"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                />
+
+            <RadioButton
+                android:id="@+id/HorseRidingButton"
+                android:layout_below="@+id/ExperienceTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Horse Riding Lessons - $50.00 per person." />
+
+            <RadioButton
+                android:id="@+id/FishingButton"
+                android:layout_below="@+id/HorseRidingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Fishing/Fly-Fishing guide - $50.00 per person." />
+
+            <RadioButton
+                android:id="@+id/MassageButton"
+                android:layout_below="@+id/FishingButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Massage - $100.00 per person." />
+
+            <TextView
+                android:id="@+id/ExtraTitle"
+                android:layout_below="@+id/MassageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:text="Add an extra"
+                android:textColor="@color/colorAccent"
+                android:textSize="20sp"
+                />
+
+            <RadioButton
+                android:id="@+id/MealButton"
+                android:layout_below="@+id/ExtraTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text="Meals - $50.00 per person/per day." />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_below="@+id/MealButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="100dp"
+                android:paddingRight="100dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="20dp"
+                android:layout_centerHorizontal="true"
+                android:text="Next"
+                android:textSize="30sp"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/round_button"/>
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

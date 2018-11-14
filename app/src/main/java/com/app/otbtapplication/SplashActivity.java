@@ -11,6 +11,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().hide();                           //THIS HIDES THE ACTION BAR IN SPECIFIC ACTIVITY!
         setContentView(R.layout.activity_splash);
         new Handler().postDelayed(new Runnable() {
             @Override

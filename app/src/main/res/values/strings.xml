@@ -13,4 +13,22 @@
     <string name="screen_page_text">Welcome  to the second page</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="button_signup_text">Sign-up</string>
+
+    <string name="spinner_prompt">Make a selection</string>
+
+    <string-array name="accommodation_options">
+        <item name ="Luxury Cabin">Camping Site for Campervans</item>
+        <item name ="Luxury Lotus Belle Tents">Camping Site for Tents</item>
+        <item name ="Geodesic Dome Tents">Option 3</item>
+    </string-array>
+
+    <string-array name="guest_options">
+        <item name ="1 guests">1 guests</item>
+        <item name ="2 guests">2 guests</item>
+        <item name ="3 guests">3 guests</item>
+        <item name ="4 guests">4 guests</item>
+    </string-array>
+
+
+
 </resources>
