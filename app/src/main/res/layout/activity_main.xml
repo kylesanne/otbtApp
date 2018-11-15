@@ -4,14 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/Companylogo"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:padding="5dp"
+        app:srcCompat="@drawable/otbt_logo2" />
+
+    <View
+        android:id="@+id/SeperationLine1"
+        android:layout_below="@+id/Companylogo"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@android:color/darker_gray"/>
 
     <ScrollView
+        android:layout_below="@+id/SeperationLine1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:background="@color/colorPrimary">
+        android:background="#ffffff">
 
         <RelativeLayout
             android:id="@+id/MainContainer"
@@ -30,7 +49,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:text="Try these"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="#A9A9A9"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -41,18 +60,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="49dp"
                     android:orientation="horizontal" />
-
-                <Button
-                    android:id="@+id/button2"
-                    android:layout_width="50dp"
-                    android:layout_height="33dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginStart="311dp"
-                    android:layout_marginLeft="311dp"
-                    android:layout_marginTop="9dp"
-                    android:text=" " />
 
             </RelativeLayout>
 
@@ -69,7 +76,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="40dp"
                     android:text="Need gear?"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="#A9A9A9"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -109,7 +116,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="0dp"
                     android:text="Featured near you"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="#A9A9A9"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 
@@ -128,7 +135,7 @@
             <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="700dp">
+                android:layout_marginTop="725dp">
 
                 <TextView
                     android:id="@+id/interestingReadText"
@@ -137,7 +144,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="40dp"
                     android:text="Interesting read"
-                    android:textColor="@color/colorAccent"
+                    android:textColor="#A9A9A9"
                     android:textSize="24sp"
                     android:textStyle="bold" />
 

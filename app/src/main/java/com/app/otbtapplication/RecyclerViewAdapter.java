@@ -49,7 +49,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.image.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, mNames.get(position), Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(mContext, Camping.class);
+                mContext.startActivity(intent);
+                //Toast.makeText(mContext, mNames.get(position), Toast.LENGTH_LONG).show();
 
             }
         });

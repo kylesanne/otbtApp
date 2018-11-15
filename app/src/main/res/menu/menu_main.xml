@@ -8,8 +8,6 @@
         android:focusable="false"
         android:iconifiedByDefault="false"
         app:iconifiedByDefault="false"
-        android:title="@string/search_hint"
-        android:hint="@string/search_hint"
         android:icon="@android:drawable/ic_menu_search"
         app:actionViewClass="android.support.v7.widget.SearchView"
         android:layout_alignParentLeft="true"

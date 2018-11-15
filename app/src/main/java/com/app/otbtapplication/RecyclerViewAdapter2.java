@@ -1,6 +1,7 @@
 package com.app.otbtapplication;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.content.Intent;
 
 import com.bumptech.glide.Glide;
 
@@ -46,12 +48,15 @@ public class RecyclerViewAdapter2 extends RecyclerView.Adapter<RecyclerViewAdapt
 
 
         holder.image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(mContext, mNames.get(position), Toast.LENGTH_LONG).show();
-            }
-        });
-    }
+        @Override
+        public void onClick(View v) {
+            //Toast.makeText(mContext, mNames.get(position), Toast.LENGTH_LONG).show();
+            Intent intent = new Intent(mContext, CampingThree.class);
+            mContext.startActivity(intent);
+        }
+    });
+}
+
 
     @Override
     public int getItemCount() {

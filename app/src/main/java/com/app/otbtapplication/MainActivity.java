@@ -1,6 +1,7 @@
 package com.app.otbtapplication;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v4.view.MenuItemCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -23,11 +24,11 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+
     private static final String TAG = "MainActivity";
 
-    private Button button2;
-
-
+    private Button camping;
+    private Button equipment;
 
     //vars
     private ArrayList<String> mNames = new ArrayList<>();
@@ -46,29 +47,44 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         getImages();
 
-        button2 = (Button) findViewById(R.id.button2);
-        button2.setOnClickListener(new View.OnClickListener() {
+
+        ImageView camping = (ImageView) findViewById(R.id.readView);
+        ImageView equipment = (ImageView) findViewById(R.id.advertisementView);
+
+
+        camping.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 OpenActivityBook();
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://offthebeatentrack.co.nz/?p=blog&BlogId=2"));
+                startActivity(browserIntent);
+            }
+        });
+
+        equipment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://offthebeatentrack.co.nz/"));
+                startActivity(browserIntent);
             }
         });
 
     }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+        }}
+
+
+
 
     public void OpenActivityBook() {
         Intent intent = new Intent(this, BookActivity.class);
         startActivity(intent);
     }
 
-    @Override
-    public void onClick(View v) {
-        switch (v.getId()){
-            case R.id.button2:
-                Toast.makeText(this, "menu button clicked", Toast.LENGTH_SHORT).show();
-                break;
-        }
-    }
+
 
     private void getImages(){
         Log.d(TAG, "initImageBitmaps: preparing bitmaps.");
@@ -97,20 +113,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initRecyclerView();
 
 
-        mImageUrls2.add("https://i.imgur.com/nCpZf5t.png");
+        mImageUrls2.add("https://i.imgur.com/tb4nKap.png");
         mNames2.add("The Ark @ Tui Ridge");
         mPrices.add("$99 per night");
 
-        mImageUrls2.add("https://i.imgur.com/0LFntCv.png");
+        mImageUrls2.add("https://i.imgur.com/IomlYsN.png");
         mNames2.add("Old Coach Oasis");
         mPrices.add("$240 per night (up to 2 guests)");
 
-        mImageUrls2.add("https://i.imgur.com/4lAkhsM.png");
-        mNames2.add("Tui Treehouse - ★★★★");
+        mImageUrls2.add("https://i.imgur.com/xkMg4F6.png");
+        mNames2.add("Tui Treehouse");
         mPrices.add("$120 per night (up to 2 guests)");
 
-        mImageUrls2.add("https://i.imgur.com/N8Zs4I5.png");
-        mNames2.add("Welcome Rock");
+        mImageUrls2.add("https://i.imgur.com/YFd93ZV.png");
+        mNames2.add("Welcome Rock - ★★★★");
         mPrices.add("$150 per night (up to 2 guests)");
 
         initRecyclerView2();
@@ -132,6 +148,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         recyclerView2.setAdapter(adapter2);
     }
 
+
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
@@ -140,7 +158,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 MenuItemCompat.getActionView(menu.findItem(R.id.search_button));
 
         searchView.onActionViewExpanded();
-        searchView.setFocusable(false);
+        searchView.setFocusable(true);
+        searchView.clearFocus();
+        searchView.setQueryHint(" Search listings...");
 
         return true;
 
