@@ -139,17 +139,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:layout_marginLeft="135dp"
+        android:layout_marginLeft="130dp"
         android:text="Luxury Cabin"
         android:textColor="#A9A9A9"
         android:textSize="14sp"/>
 
     <TextView
         android:id="@+id/guestAmount"
-        android:layout_below="@id/location"
+        android:layout_below="@id/accType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
         android:layout_marginLeft="10dp"
         android:text="Number of guests:"
         android:textColor="#A9A9A9"
@@ -158,14 +157,113 @@
 
     <TextView
         android:id="@+id/guestNumber"
-        android:layout_below="@id/location"
+        android:layout_below="@id/accType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
         android:layout_marginLeft="135dp"
         android:text="2 Guests"
         android:textColor="#A9A9A9"
         android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/checkIn"
+        android:layout_below="@id/guestAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Check-in:"
+        android:textColor="#A9A9A9"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/checkInDate"
+        android:layout_below="@id/guestAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:text="1/12/18 @ 12:30pm"
+        android:textColor="#A9A9A9"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/checkOut"
+        android:layout_below="@id/checkIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Check-out:"
+        android:textColor="#A9A9A9"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/checkOutDate"
+        android:layout_below="@id/checkIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:text="3/12/18 @ 9:30am"
+        android:textColor="#A9A9A9"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/experiences"
+        android:layout_below="@id/checkOutDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Experiences:"
+        android:textColor="#A9A9A9"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/experience"
+        android:layout_below="@id/checkOutDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:text="None"
+        android:textColor="#A9A9A9"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/extras"
+        android:layout_below="@id/experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Extras:"
+        android:textColor="#A9A9A9"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/extra"
+        android:layout_below="@id/experience"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="64dp"
+        android:text="None"
+        android:textColor="#A9A9A9"
+        android:textSize="14sp"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_below="@id/checkOutDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button"
+        android:paddingLeft="100dp"
+        android:paddingRight="100dp"
+        android:text="Home"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 
 
 
