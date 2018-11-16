@@ -1,6 +1,5 @@
 package com.app.otbtapplication;
 
-import android.content.ClipData;
 import android.content.Intent;
 import android.net.Uri;
 import android.support.v4.view.MenuItemCompat;
@@ -10,13 +9,11 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SearchView;
 import android.util.Log;
-import android.view.Display;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -50,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         getImages();
 
+
         ImageView camping = (ImageView) findViewById(R.id.readView);
         ImageView equipment = (ImageView) findViewById(R.id.advertisementView);
 
@@ -77,6 +75,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         switch (v.getId()){
         }}
+
+
+
 
     public void OpenActivityBook() {
         Intent intent = new Intent(this, BookActivity.class);
@@ -148,11 +149,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
-        final android.support.v7.widget.SearchView searchView = (android.support.v7.widget.SearchView)
+        android.support.v7.widget.SearchView searchView = (android.support.v7.widget.SearchView)
                 MenuItemCompat.getActionView(menu.findItem(R.id.search_button));
 
         searchView.onActionViewExpanded();
