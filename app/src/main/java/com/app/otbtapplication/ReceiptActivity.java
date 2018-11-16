@@ -36,12 +36,8 @@ public class ReceiptActivity extends AppCompatActivity implements View.OnClickLi
         }
     }
 
-
     public void OpenActivityMain() {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-
-
-
 }

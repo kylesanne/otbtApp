@@ -77,8 +77,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }}
 
 
-
-
     public void OpenActivityBook() {
         Intent intent = new Intent(this, BookActivity.class);
         startActivity(intent);
@@ -169,6 +167,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
+
             case R.id.about:
                 Intent a = new Intent(this, About.class);
                 startActivity(a);
