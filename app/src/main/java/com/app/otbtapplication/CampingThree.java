@@ -41,5 +41,5 @@ public class CampingThree extends AppCompatActivity implements View.OnClickListe
         startActivity(intent);
     }
 
-    
+
 }
